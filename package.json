@@ -1,0 +1,25 @@
+{
+  "name": "lesson",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000N\u0000o\u0000d\u0000e\u0000.\u0000j\u0000s\u0000\r\u0000 \u0000",
+  "main": "helloworld.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kristina930/Node.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kristina930/Node.js/issues"
+  },
+  "homepage": "https://github.com/Kristina930/Node.js#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9"
+  }
+}
