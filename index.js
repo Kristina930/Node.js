@@ -1,44 +1,40 @@
-const prnt = require('colors/safe')
-const { exists } = require('fs')
+/*Решите задачу по выводу данных в консоль*/
+Ответ 
+/*Record 1
+Record 5
+Record 6
+Record 2
+Первое выполниться console.log('Record 1') и console.log('Record 5')
+Вторые выведються как имеют приеоретет  Promise Record 6.
+Третьем будет выведено setTimeout Record 2*/
 
-const [from, to] = process.argv.slice(2).map(item => parseInt(item))
+console.log('Record 1');
 
-if (isNaN(from) || isNaN(to)) {
-    console.log('Неправельное число')
-}
+    setTimeout(() => {
+        console.log('Record 2');
+    Promise.resolve().then(() => {
+        setTimeout(() => {
+            сonsole.log('Record 3');
+    Promise.resolve().then(() => {
+        console.log('Record 4');
+            });
+        });
+    });
+});
 
-let idx = 0
-const colorPrint = (num) => {
-    const collect = ['green', 'yellow', 'red']
+console.log('Record 5');
 
-    console.log(prnt[collect[idx]](num))
-    if(idx === collect.length){
-        idx = 0
-    } else {
-        idx++
-    }
+Promise.resolve().then(() => Promise.resolve().then(() => console.log('Record 6')));
 
-}
 
-const isPrime = (num) => {
-    if(num <= 1) {
-        return false
-    }
-    let i = 2
-    while(1 < num) {
-        if(num % i === 0) return false
-        i++
-    }
-    return true
-}
 
-let i = from
-while(i <= to) {
-    if(isPrime(i)) {
-        colorPrint(i)
-    }
-    i++
-}
+
+
+
+
+
+
+
 
 
 
