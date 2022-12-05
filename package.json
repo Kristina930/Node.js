@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/Kristina930/Node.js#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "socket.io": "^4.5.4"
   },
   "devDependencies": {
     "@types/node": "^18.11.9"
-  }
+  },
+  "keywords": []
 }
